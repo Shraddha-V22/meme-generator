@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+.App {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  /* font-family: "Inter", sans-serif; */
+}
+
+nav {
+  padding: 0.5rem 1.5rem;
+  color: white;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  text-align: left;
+  width: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+  max-width: 450px;
+  margin: 20px auto;
+}
+
+.main button {
+  grid-column: span 2;
+  color: white;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+}
+
+.main input {
+  text-indent: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  grid-column: span 2;
+  color: white;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+  position: relative;
+  text-align: center;
+}
+
+.meme--img {
+  width: 100%;
+  margin: auto;
+}
+
+.top-text {
+  position: absolute;
+  width: 100%;
+  top: 5px;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: small;
+  }
+
+  .main {
+    grid-template: 40px 40px / repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
